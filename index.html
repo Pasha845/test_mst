@@ -12,40 +12,45 @@
       <a class="header__logo" href="#">Logo</a>
       <nav class="header__cube">
         <ul class="header__menu flex">
-          <li class="header__margin-link">
+          <li>
             <a class="link" href="#">About us</a>
           </li>
-          <li class="header__margin-link">
+          <li>
             <a class="link" href="#">News</a>
           </li>
-          <li class="header__margin-link">
+          <li>
             <a class="link" href="#">Contact us</a>
           </li>
         </ul>
       </nav>
+      <button class="header__burger" aria-label="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero__container container flex">
-        <div>
+        <div class="hero__cube">
           <h1 class="hero__title">The magic of the autumn forest</h1>
           <p class="hero__text">the magic of nature in every leaf</p>
           <ul class="hero__list">
-            <li class="hero__item">
+            <li class="hero__item flex">
               <p>proper <span>3</span> meals a day</p>
             </li>
-            <li class="hero__item">
+            <li class="hero__item flex">
               <p><span>150</span> minutes of physical activity</p>
             </li>
-            <li class="hero__item">
+            <li class="hero__item flex">
               <p><span>7-9</span> hours of quality sleep</p>
             </li>
           </ul>
           <a class="btn" href="#">open</a>
         </div>
-        <picture>
+        <picture class="image">
           <source srcset="img/hero.webp" media="(min-width: 320px) and (max-width: 576px)">
           <source srcset="img/hero.png" media="(min-width: 577px)">
           <img loading="eager" srcset="img/hero.png" alt="Hero image" src="#" width="763" height="1009">
@@ -55,7 +60,7 @@
 
     <section class="about">
       <div class="about__container container flex">
-        <picture>
+        <picture class="image">
           <source srcset="img/about-1.webp" media="(min-width: 320px) and (max-width: 576px)">
           <source srcset="img/about-1.png" media="(min-width: 577px)">
           <img loading="lazy" srcset="img/about-1.png" alt="About image" src="#" width="622" height="724">
@@ -77,7 +82,7 @@
           </ul>
           <a class="about__btn btn" href="#">open</a>
         </div>
-        <picture>
+        <picture class="image">
           <source srcset="img/about-2.webp" media="(min-width: 320px) and (max-width: 576px)">
           <source srcset="img/about-2.png" media="(min-width: 577px)">
           <img loading="lazy" srcset="img/about-2.png" alt="About image" src="#" width="589" height="724">
@@ -88,7 +93,7 @@
     <section class="contacts">
       <div class="container">
         <div class="contacts__cube flex">
-          <div>
+          <div class="contacts__item flex">
             <h2 class="contacts__title">Contact us for more information</h2>
             <form class="contacts__form" action="#">
               <label class="contacts__label contacts__input-name">
@@ -104,7 +109,7 @@
               <button class="contacts__btn btn" type="submit">Send</button>
             </form>
           </div>
-          <picture>
+          <picture class="image">
             <source srcset="img/contacts.webp" media="(min-width: 320px) and (max-width: 576px)">
             <source srcset="img/contacts.png" media="(min-width: 577px)">
             <img class="contacts__image" loading="lazy" srcset="img/contacts.png" alt="Contacts image" src="#" width="589" height="628">
@@ -118,13 +123,13 @@
     <div class="footer__subdiv">
       <div class="container">
         <ul class="footer__menu flex">
-          <li class="footer__margin-link">
+          <li>
             <a class="footer__link link" href="#">About us</a>
           </li>
-          <li class="footer__margin-link">
+          <li>
             <a class="footer__link link" href="#">News</a>
           </li>
-          <li class="footer__margin-link">
+          <li>
             <a class="footer__link link" href="#">Contact us</a>
           </li>
         </ul>
@@ -135,7 +140,7 @@
         <div class="footer__subcube footer__between flex">
           <a class="header__logo" href="#">Logo</a>
           <ul class="footer__list flex">
-            <li class="footer__margin-icon">
+            <li>
               <a class="footer__icon" href="#" aria-label="Instagram">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_65_1272)">
@@ -151,7 +156,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__margin-icon">
+            <li>
               <a class="footer__icon" href="#" aria-label="TikTok">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_65_1273)">
@@ -165,7 +170,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__margin-icon">
+            <li>
               <a class="footer__icon" href="#" aria-label="LinkedIn">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_65_1274)">
@@ -183,7 +188,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__margin-icon">
+            <li>
               <a class="footer__icon" href="#" aria-label="Facebook">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_65_1275)">
@@ -197,7 +202,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__margin-icon">
+            <li>
               <a class="footer__icon" href="#" aria-label="telegram">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_65_1276)">
@@ -211,7 +216,7 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__margin-icon">
+            <li>
               <a class="footer__icon" href="#" aria-label="Youtube">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_65_1277)">
@@ -237,5 +242,6 @@
       </div>
     </div>
   </footer>
+  <script defer src="js/burger-menu.js"></script>
 </body>
 </html>
