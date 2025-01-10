@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main</title>
+  <meta name="description" content="Autumn is a magical time of year when nature seems to transform and fill with bright colors. The leaves on the trees turn gold, scarlet and orange, creating a stunning contrast with the clear sky. The cold wind brings with it the smells of ripe apples and freshly harvested crops.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="header">
@@ -32,6 +35,7 @@
   </header>
 
   <main>
+    <div class="overlay"></div>
     <section class="hero">
       <div class="hero__container container flex">
         <div class="hero__cube">
@@ -85,7 +89,7 @@
         <picture class="image">
           <source srcset="img/about-2.webp" media="(min-width: 320px) and (max-width: 576px)">
           <source srcset="img/about-2.png" media="(min-width: 577px)">
-          <img loading="lazy" srcset="img/about-2.png" alt="About image" src="#" width="589" height="724">
+          <img loading="lazy" srcset="img/about-2.png" alt="About image" src="#" width="570" height="724">
         </picture>
       </div>
     </section>
@@ -95,7 +99,7 @@
         <div class="contacts__cube flex">
           <div class="contacts__item flex">
             <h2 class="contacts__title">Contact us for more information</h2>
-            <form class="contacts__form" action="#">
+            <form class="contacts__form" action="#" method="post">
               <label class="contacts__label contacts__input-name">
                 <input class="contacts__input" type="text" name="name" placeholder="Name" required>
               </label>
