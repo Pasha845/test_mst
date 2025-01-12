@@ -104,7 +104,7 @@
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
   const maxScroll = document.body.scrollHeight - window.innerHeight;
-  const opacity = Math.min(scrollTop / maxScroll, 0.3);
+  const opacity = Math.min(scrollTop / maxScroll, 0.4);
 
   const overlay = document.querySelector('.overlay');
   overlay.style.background = `rgba(0, 0, 0, ${opacity})`;
